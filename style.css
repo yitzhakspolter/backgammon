@@ -1,0 +1,76 @@
+body {
+    display: block;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  .board-container{
+    position: relative;
+    width: 40vw; /* Relative to viewport width */
+    margin-left: 30vw;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .board-container img {
+      width: 100%; /* Scale image to fill the container */
+      height: auto; /* Maintain aspect ratio */
+  }
+  
+  .whiteDot {
+    position: absolute;
+    height: 5%;
+    background-color: beige;
+    border-radius: 50%;
+    display: inline-block;
+    aspect-ratio: 1 / 1; 
+  }
+  
+  .blackDot {
+    position: absolute;
+    height: 5%;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    aspect-ratio: 1 / 1; 
+  }
+  
+  .tempDot {
+    position: absolute;
+    height: 5%;
+    background-color: gray;
+    border-radius: 50%;
+    display: none;
+    aspect-ratio: 1 / 1; 
+    --index: 0;
+    --dieIndex: 0;
+    --out: 0;
+  }
+  
+  .whiteDot:hover{
+    box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    0 0 140px 90px #0ff; /* outer cyan */
+  }
+  
+  .blackDot:hover{
+    box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    0 0 140px 90px #0ff; /* outer cyan */
+  }
+  
+  .die {display:inline-block;}
+  
+  #dice{
+    text-align: center;
+    background-color: green;
+    color: white;
+  }
+  
+  #bot{
+    text-align: center;
+    display: block;
+  }
+  
+  
